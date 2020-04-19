@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "preact-styled-component-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple project using Preact, Styled Components and Parcel",
+  "license": "MIT",
+  "main": "index.html",
+  "scripts": {
+    "dev": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-synacor": "^3.0.4",
+    "preact-cli": "^3.0.0-rc.6",
+    "sirv-cli": "^0.4.5"
+  },
+  "dependencies": {
+    "parcel": "^1.12.4",
+    "preact": "^10.1.0",
+    "preact-render-to-string": "^5.1.2",
+    "styled-components": "^5.1.0"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom": "preact/compat"
+  }
+}
